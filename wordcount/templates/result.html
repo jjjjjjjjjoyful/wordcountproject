@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wordcount Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'main.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                <a href="{% url 'home' %}" class="active">HOME</a>
+                </li>
+                <li>
+                <a href="{% url 'about' %}" class="active">about</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+            <br>
+            <br>
+            <br>
+            <br>
+    <div class="container">
+        <h1>Result</h1>
+        <br>
+        <div class="box">
+            <div class="totalwords">
+                <h3>당신이 입력한 텍스트는 {{ total }} 단어로 구성되어 있습니다.</h3>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+                <h3 class="card-title">입력한 텍스트</h3>
+                <div class="card-body">
+                    {{ fulltext }}
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                    <h3 class="card-title">단어 카운트</h3>
+                <div class="card-body">
+                    {% for word, frequency in dictionary %}
+                    {{word}} - {{frequency}}
+                    <br>
+                    {% endfor %}
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="footer" style="text-align: center;">
+        <p>Made by: SHIMJIWON</p>
+        <p>Contact information: 
+        <a href="mailto:wldnjs0919@likelion.org">
+        wldnjs0919@likelion.org</a>
+        </p>
+    </div>
+</body>
+</html>

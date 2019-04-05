@@ -1,0 +1,126 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0
+}
+
+header {
+	margin-top:0px;
+	width:100%;
+	height:45px;
+	margin-bottom:40px;
+	background:#1D1D1D;
+	position:fixed;
+	z-index:999;
+}
+
+header .main-nav {
+	margin-top:10px;
+	float:right;
+}
+
+header .main-nav li {
+	display:inline-block;
+	margin-right:40px;
+	list-style:none;
+}
+
+header .main-nav li a {
+	color:#FFF;
+	font-size:10px;
+	text-transform:uppercase;
+	font-weight:600;
+	letter-spacing:2px;
+}
+
+header .main-nav li a:hover, header .main-nav li a.active {
+    color:#666;
+}
+
+.home {
+    text-align: center;
+}
+.form {
+	text-align: center;
+}
+
+.write {
+    color: #666;
+}
+
+.container {
+    text-align: center;
+}
+
+.card-body {
+	margin: 40px;
+	padding: 10px;
+	background-color: rgb(216, 216, 216);
+}
+
+.abouttitle {
+	border-bottom: double;
+	margin: 20px 50px;
+	padding: 20px;
+}
+
+.box {
+	background-color: rgb(228, 228, 228);
+	padding: 20px 40px;
+	margin: auto;
+}
+
+.totalwords {
+	border-bottom: groove;
+	margin: 0px 50px 10px 50px;
+	padding: 20px;
+}
+
+.card-body {
+	display: inline-block;
+	border: solid;
+	border-color: rgb(165, 165, 165);
+	border-width: 1.5px;
+	margin: 0px 0px 30px 0px;
+	background-color: white;
+	padding: 40px;
+	width: 180px;
+}
+
+.card {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.card-title {
+	border: solid, rgb(165, 165, 165);
+	padding: 10px 0px;
+	margin: 0px 10px;
+	border-radius: 20px;
+	background-color: rgb(165, 165, 165);
+}
+
+.footer {
+	color: rgb(207, 207, 207);
+	margin: 60px 0px 10px 0px;
+	position: bottom;
+	margin-bottom: 50px;
+}
+
+.about-body {
+	border: solid, rgb(228, 228, 228);
+	padding: 20px 140px;
+	margin: auto;
+	background-color: rgb(228, 228, 228);
+}
+
+.write {
+	background-color: rgb(228, 228, 228);
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 0;
+	width: 400px;
+}
+
+.writetext {
+	margin-top: 0;
+}
